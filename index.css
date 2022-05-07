@@ -1,1 +1,48 @@
+/* 初期化 */
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
 
+.top-image{
+    width: 100%;
+    background-image: url(img/meerkat_yuuhi.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 450px;
+    background-color: #e4c6a6;
+}
+
+.top-title{
+    font-size: 85px;
+    padding-top: 130px;
+    font-weight: bold;
+  color: transparent;
+  text-shadow: 3px 3px 0 #8e775d;
+  -webkit-text-stroke: 1px #e4c6a6;
+}
+
+.event-campain{
+    color: #8e775d;
+}
+
+.event-list{
+    padding-top: 80px;
+    position: relative;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    color: #454545;
+}
+
+.event-list{
+    position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ffdb88 #fff #ffdb88;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
