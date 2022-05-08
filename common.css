@@ -59,26 +59,65 @@ header {
 
 /* footer */
 footer{
-    height: 250px;
+    height: 400px;
     width: 100vw;
     background-color: #e6cd8c;
+}
+
+.foot-wrap {
+    background-color: #e6cd8c;
+    color: #8e775d;
+    text-align: center;
+}
+
+.foot-wrap .menu-top, .menu-aboutus, .menu-animals, .menu-access, .menu-contact {
+    display: inline-block;
+    width: 15%;
+    margin: 50px auto;
+}
+
+.foot-wrap ul {
+    list-style: none;
+    padding: 0;
+    line-height:40px;
+}
+
+.foot-wrap h3 {
+    border-bottom: 3px solid #8e775d;
+    padding: 10px;
+}
+
+.foot-wrap a {
+    text-decoration: none;
     color: #8e775d;
 }
 
-.footer-left{
-    display:table-cell;
-  vertical-align:middle;
+.foot-wrap a:hover {
+    color: #ddd;
 }
 
-.footer-left p{
-    margin-bottom: 8px;
+.foot-wrap .cmark {
+    display: block;
+    padding: 10px;
+    border-top: 1px solid #8e775d;
+    width: 80%;
+    margin: 0 auto;
+    color: #8e775d;
 }
 
-.footer-right{
-    float: right;
-    padding-top: 50px;
+@media screen and (max-width: 980px) {
+    .foot-wrap .menu-top, .menu-aboutus, .menu-animals, .menu-access, .menu-contact  {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .foot-wrap .cpr {
+        display: inline;
+    }
 }
 
+
+/* body */
 body{
     height: 100px;
     width: 100vw;
@@ -88,4 +127,121 @@ body{
 main{
     width: 100%;
     background-color: #e4c6a6;
+}
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+  top:-120%;
+    left:0;
+  width:100%;
+    height: 100vh;/*ナビの高さ*/
+  background-color:#e4c6a6;
+    /*動き*/
+  transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    top: 0;
+    background-color: #e4c6a6;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    background-color: #e4c6a6;
+    position: fixed;
+    z-index: 999; 
+    width: 100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    background-color: #e4c6a6;
+    position: absolute;
+    color: #8e775d;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+    color: #8e775d;
+  list-style: none;
+    text-align: center; 
+}
+
+#g-nav li a{
+  color: #8e775d;
+  text-decoration: none;
+  padding:10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+  position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+  top:10px;
+  right: 10px;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+}
+  
+/*×に変化*/  
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background-color: #8e775d;
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
 }
