@@ -8,6 +8,8 @@
     
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="animals.css">
+
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap" rel="stylesheet"/>
     
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
@@ -15,10 +17,11 @@
 
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/css/6-1-7.css">
-    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/6-1-7.css">
 
     <script>
         (function(d) {
@@ -29,7 +32,7 @@
           },
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
-      </script>
+    </script>
 
 </head>
 
@@ -62,50 +65,138 @@
     </nav>
 
     <main>
+
         <div class="container">
-            <div class="top-box"></div>
+            <div class="animals">
 
-            <div class="top-image">
-                <div class="container">
-                    <p class="top-title">Animal Park</p>
-                    <p class="top-subtitle"></p>
+                <a id="riku-animals"></a>
+                <div class="animal-category">
+                    Land Animals
                 </div>
-            </div>
+                    <div class="riku-animals">
 
-            <div class="event-campain">
-                <a id="todayevent"></a>
-                <h2 class="event-list">今月のイベント</h2>
-                <span class="material-symbols-outlined">
-                    pets
-                </span>
-                <a>ミーアキャットの園内散歩</a><br>
-                <span class="material-symbols-outlined">
-                    pets
-                </span>
-                <a>ミーアキャットの園内散歩</a><br>
-                <span class="material-symbols-outlined">
-                    pets
-                </span>
-                <a>ミーアキャットの園内散歩</a><br>
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/kirin.jpg">
+                            <p><span>『Giraffe』</span><br>
+                            植物食(葉.果実)<br>
+                            特定動物<br>
+                            キリン科キリン属<br>
+                            体長 3.9-5.3m<br></p>
+                        </div>
 
-                <a id="todaycampain"></a>
-                <h2 class="event-list">今月のキャンペーン</h2>
-                <span class="material-symbols-outlined">
-                    pets
-                </span>
-                <a>ミーアキャットの園内散歩</a><br>
-                <span class="material-symbols-outlined">
-                    pets
-                </span>
-                <a>ミーアキャットの園内散歩</a><br>
-                <span class="material-symbols-outlined">
-                    pets
-                </span>
-                <a>ミーアキャットの園内散歩</a><br>
-                    
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/lion.jpg">
+                            <p><span>『Lion』</span><br>
+                                肉食動物(哺乳類)<br>
+                                特定動物<br>
+                                ネコ科ヒョウ属<br>
+                                体長 1.4-2.5m<br></p>
+                        </div>
+
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/tiger.jpg">
+                            <p><span>『Tiger』</span><br>
+                                肉食動物(哺乳類)<br>
+                                特定動物<br>
+                                ネコ科ヒョウ属<br>
+                                体長 1.4-2.8m<br></p>
+                        </div>
+
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/gorilla.jpg">
+                            <p><span>『Gorilla』</span><br>
+                                雑食<br>
+                                特定動物<br>
+                                ヒト科ゴリラ属<br>
+                                体長 1.7-1.8m<br></p>
+                        </div>
+
+                    </div>
+    
+                <a id="small-animals"></a>
+                <div class="animal-category">
+                    Small Animals
                 </div>
-            </div>
+                    <div class="small-animals">
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/rabbit.jpg">
+                            <p><span>『Rabbit』</span><br>
+                                植物食(樹皮.果実)<br>
+                                飼育可能<br>
+                                ウサギ科<br>
+                                体長 30-76cm<br></p>
+                        </div>
 
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/top_miacat.jpg">
+                            <p><span>『Meerkat』</span><br>
+                                食肉類(鳥類.果実)<br>
+                                飼育可能<br>
+                                マングース科<br>
+                                体長 25-31cm<br></p>
+                        </div>
+
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/lessarpanda.jpg">
+                            <p><span>『Red Panda』</span><br>
+                                食肉類(鳥類.昆虫)<br>
+                                絶滅危惧種<br>
+                                レッサーパンダ科<br>
+                                体長 28-48.5cm<br></p>
+                        </div>
+
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/koala.jpg">
+                            <p><span>『Koala』</span><br>
+                                有袋類.恒温動物<br>
+                                絶滅危惧種<br>
+                                コアラ科コアラ属<br>
+                                体長 65-82cm<br></p>
+                        </div>
+
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/kapibara.jpg">
+                            <p><span>『Capybara』</span><br>
+                                齧歯類<br>
+                                低危険種<br>
+                                テンジクネズミ科<br>
+                                体長 106-134cm<br></p>
+                        </div>
+
+                    </div>
+    
+                <a id="water-animals"></a>
+                <div class="animal-category">
+                    Aquatic Organisms
+                </div>
+                    <div class="water-animals">
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/rakko.jpg">
+                            <p><span>『Sea otter』</span><br>
+                                肉食(貝類.魚類)<br>
+                                絶滅危惧種<br>
+                                イタチ科ラッコ属<br>
+                                体長 25-37cm<br></p>
+                        </div>
+
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/penguin.jpg">
+                            <p><span>『Penguin』</span><br>
+                                肉食(魚類.甲殻類)<br>
+                                絶滅危惧種(一部)<br>
+                                鳥綱ペンギン目<br>
+                                体長 40-130cm<br></p>
+                        </div>
+
+                        <div class="meerkat-photo">
+                            <img class="meerkat-top-photo" src="img/kawauso.jpg">
+                            <p><span>『Otter』</span><br>
+                                肉食(魚類.甲殻類)<br>
+                                絶滅危惧種<br>
+                                食肉目イタチ科<br>
+                                体長 41-64cm<br></p>
+                        </div>
+                    </div>
         </div>
         
     </main>
@@ -133,25 +224,25 @@
                 <div class="menu-animals">
                     <h3>Animals</h3>
                     <ul class="foot-animals">
-                        <li><a href="#">footer-menu</a></li>
-                        <li><a href="#">footer-menu</a></li>
-                        <li><a href="#">footer-menu</a></li>
+                        <li><a href="animals.html #riku-animals">Land Animals</a></li>
+                        <li><a href="animals.html #small-animals">Small Animals</a></li>
+                        <li><a href="animals.html #water-animals">Aquatic Organisms</a></li>
                     </ul>
                 </div>
                 <div class="menu-access">
-                    <h3>Accsss</h3>
+                    <h3>Access</h3>
                     <ul class="foot-access">
-                        <li><a href="#">footer-menu</a></li>
-                        <li><a href="#">footer-menu</a></li>
-                        <li><a href="#">footer-menu</a></li>
+                        <li><a href="access.html #address">住所</a></li>
+                        <li><a href="access.html #parkmap">園内Map</a></li>
+                        <li><a href="access.html #googlemap">Google Map</a></li>
                     </ul>
                 </div>
                 <div class="menu-contact">
                     <h3>Contact</h3>
                     <ul class="foot-contact">
-                        <li><a href="#">footer-menu</a></li>
-                        <li><a href="#">footer-menu</a></li>
-                        <li><a href="#">footer-menu</a></li>
+                        <li><a href="contact.html #contactform">問い合わせ</a></li>
+                        <li><a href="contact.html #snsshare">SNS共有</a></li>
+                        <li><a href="contact.html #questionlist">よくある質問一覧</a></li>
                     </ul>
                 </div>
                 <small class="cmark">©️copyright 2022
@@ -163,8 +254,11 @@
     </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--自作のJS-->
 <script src="index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>
+<script src="animals.js"></script>
 
 </body>
 </html>
