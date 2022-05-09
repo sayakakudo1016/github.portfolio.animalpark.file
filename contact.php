@@ -101,7 +101,7 @@
                 <a href="aboutus.html">About Us</a>
                 <a href="animals.html">Animals</a>
                 <a href="access.html">Access</a>
-                <a href="contact.html">Contact</a>
+                <a href="contact.php">Contact</a>
             </div>
         </div>
     </header>
@@ -114,7 +114,7 @@
                 <li><a href="aboutus.html">About Us</a></li>  
                 <li><a href="animals.html">Animals</a></li>  
                 <li><a href="access.html">Access</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -257,9 +257,9 @@
                 <div class="menu-contact">
                     <h3>Contact</h3>
                     <ul class="foot-contact">
-                        <li><a href="contact.html #contactform">問い合わせ</a></li>
-                        <li><a href="contact.html #snsshare">SNS共有</a></li>
-                        <li><a href="contact.html #questionlist">よくある質問一覧</a></li>
+                        <li><a href="contact.php #contactform">問い合わせ</a></li>
+                        <li><a href="contact.php #snsshare">SNS共有</a></li>
+                        <li><a href="contact.php #questionlist">よくある質問一覧</a></li>
                     </ul>
                 </div>
                 <small class="cmark">©️copyright 2022
