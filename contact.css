@@ -1,6 +1,31 @@
 @charset "UTF-8";
 
+form input{
+  background-color: #e6cd8c;
+  color: #8e775d;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  box-shadow: 0 0 2px 4px #8e775d;
+}
 
+form textarea{
+  background-color: #e6cd8c;
+  color: #8e775d;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  box-shadow: 0 0 2px 4px #8e775d;
+}
+
+.check-botton{
+  width: 80px;
+  height: 50px;
+  background-color: #e6cd8c;
+  box-shadow: 0 1px 0 4px #8e775d;
+  color: #8e775d;
+  border-radius: 10px 10px 10px 10px;
+}
 
 /* -----------------------------------------アコーディオン---------------------------------------- */
 /* -----------------------------------------アコーディオン---------------------------------------- */
